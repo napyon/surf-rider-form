@@ -1,0 +1,93 @@
+[
+  {
+    "label": "First name",
+    "name": "firstName",
+    "type": "textfield"
+  },
+  {
+    "label": "Last name",
+    "name": "lastName",
+    "type": "textfield"
+  },
+  {
+    "label": "What does the ocean mean to you?",
+    "name": "oceanMeaning",
+    "type": "textarea"
+  },
+  {
+    "label": "What concerns you most about plastics in the ocean?",
+    "name": "mainConcern",
+    "type": "radio",
+    "values": [
+      { "label": "Impact on people", "value": "peopleImpact" },
+      { "label": "Impact on marine", "value": "marineImpact" }
+    ]
+  },
+  {
+    "label": "How do you think the plastic footprint is impacting people? (If more than one applies, pick the one that most concerns you)",
+    "name": "peopleImpactConcern",
+    "type": "radio",
+    "conditional": {
+      "when": "mainConcern",
+      "condition": "equals",
+      "value": "peopleImpact"
+    },
+    "values": [
+      {
+        "label": "Recreational impacts: such as impacts to fishing, boating, walking, or other opportunities to enjoy the ocean with family and friends.",
+        "value": "More than 80% of Australians live along the edge of the continent. The beaches are a favourite Australian pastime. Whether it’s a game of cricket, an early-morning surf or a lie in the sunshine, beach culture truly encapsulates Australia. With the ocean filling up with plastic, our future generations will not experience Australia’s favourite pastime."
+      },
+      {
+        "label": "Physical health and mental health impacts: due to loss of nature, or continual exposure to noise, light and visual pollution.",
+        "value": "There are different types of ways that plastic is dangerous for humans. Direct toxicity from plastics comes from lead, cadmium, and mercury. These toxins have also been found in many fish in the ocean, which is very dangerous for humans. Other toxins in plastics are directly linked to cancers, birth defects, immune system problems, and childhood developmental issues."
+      },
+      {
+        "label": "Business impacts: Such as increased costs and reduction in everyday consumers.",
+        "value": "The ocean has a strong effect on local businesses. Marine plastic pollution is the result of a failure in economic markets. It has a negative impact on most ecosystem services, including fisheries, aquaculture, climate regulation, pest and disease control, heritage values, and recreation. The full cost of disposing off plastic is directly passed on to local entities, coastal municipalities and ocean users. For instance, in the last few years, marine ecosystem service delivery was reduced by at least 1-5%, for an annual loss of $500-2500 billion to society."
+      }
+    ]
+  },
+  {
+    "label": "How do you think the plastic footprint is impacting marine life?",
+    "name": "marineImpactConcern",
+    "type": "radio",
+    "conditional": {
+      "when": "mainConcern",
+      "condition": "equals",
+      "value": "marineImpact"
+    },
+    "values": [
+      {
+        "label": "Hundreds of thousands of marine animals get entangled in plastic waste each year.",
+        "value": "This limits their motion and their ability to feed, and causes injuries and infections. Less visible is the devastation that occurs through the ingestion of plastic: seabirds, turtles, fish, and whales commonly mistake plastic waste for food, because some has a similar colour and shape to their prey. More than 800 coastal and marine species are directly affected by plastic waste through entanglement, ingestion, or damage to their habitats."
+      },
+      {
+        "label": "Floating plastic accumulates dangerous microbes and algae on the surface that gives it an appetising odour to some sea animals.",
+        "value": "Once animals consume plastic ingested microbes and algae, it can pierce internal organs or cause fatal intestinal blockages; it also leads to starvation, because a stomach crammed with plastic gives an animal the illusion of being full."
+      },
+      {
+        "label": "Mass consumption of toxin-infused particles.",
+        "value": "Plastics absorb pollutants that are floating around in the ocean, and contain harmful chemicals themselves. Preliminary research suggests that when animals consume these toxin-infused particles, it could damage their organs, make them more susceptible to disease, and alter their reproduction."
+      }
+    ]
+  },
+  {
+    "label": "Where does the plastic in our oceans come from?",
+    "name": "plasticSource",
+    "type": "radio",
+    "values": [
+      {
+        "label": "Disposable/ single-use products",
+        "value": "On average, Australians use 130kg of plastic per person each year. Less than 12% of that gets recycled. Plastic is an incredibly versatile material, made to be strong and durable. Unfortunately, most plastics are made to be used once before being discarded.\nThey’re convenient for a few minutes, but often end up in landfills, by the sides of roads, as litter in parks and floating in our oceans for hundreds of years before breaking down into microplastics."
+      },
+      {
+        "label": "Ghost fishing gear",
+        "value": "Our oceans can be an unsafe place to live. Every year millions of marine animals, including whales, seals, turtles and birds are mutilated and killed by ‘ghost’ fishing gear – nets, lines, and traps that are abandoned, lost or discarded in our oceans. A staggering 640,000 tonnes of gear is left in our oceans each year.\nOnly together can the public, governments, businesses and fishing organisations protect sea life and ensure a future free from ghost fishing gear. "
+      },
+      {
+        "label": "Marine debris",
+        "value": "Most marine debris (80%) comes from trash and debris in urban runoff, i.e. land-based sources. Key components of land-based sources include litter, trash and debris from construction, ports and marinas, commercial and industrial facilities, and trash blown out of garbage containers, trucks, and landfills."
+      }
+    ]
+  }
+]

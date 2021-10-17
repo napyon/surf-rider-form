@@ -1,0 +1,15 @@
+Dear Hackathon Demo Council,
+
+My name is {{firstName}}. {{oceanMeaning}}
+
+I am reaching out to the Advisory Committee and the Minister for Planning for the opportunity to make a submission on the problem of plastic filling our oceans. There are a variety of issues which should be deemed unacceptable under its current form.
+
+{{peopleImpactConcern}}
+{{marineImpactConcern}}
+
+{{plasticSource}}
+
+Thank you once again for the opportunity to contribute to the environment assessment of plastics in Australian oceans. As outlined above, the impact on the local community would be unacceptable. There are many other viable, and more suitable, options Australians can pursue to ensure we protect our ocean, the unique wildlife which depend on this ecosystem, or the local community to any harm.
+
+Kind regards,
+{{firstName}} {{lastName}}
